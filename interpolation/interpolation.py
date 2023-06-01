@@ -11,7 +11,7 @@ def newton_interpolation_dd(degree_needed, fct, lst_x):
     #resetting the required degree
     if degree_needed >= len(lst_x):
         degree_needed = len(lst_x)-1
-    result = np.zeros(sum(np.arange(degree_needed+1)))
+    result = np.zeros(sum(np.arange(degree_needed+2)))
     #need some fine tuning work on this 
     for h in range(degree_needed+1):
         result[h] = fct(lst_x[h])
